@@ -17,33 +17,22 @@ public class ArrayTest2 {
         String[] names = new String[numberOfStudent];
         int[] scores = new int[numberOfStudent];
         int max = 0;
+        String first = "";
 
         for (int i = 0; i < names.length; i++) {
 
             System.out.println("응시한 학생의 이름을 입력하세요.");
-            String name = sc.next();
-            names[i] = name;
+            names[i] = sc.next();
 
             System.out.println("점수를 입력하세요.");
-            int score = sc.nextInt();
-            scores[i] = score;
+            scores[i] = sc.nextInt();
 
             if (scores[i] > max) {
                 max = scores[i];
+                first = names[i];
             }
         }
 
-        System.out.println("1등은 " + names[i] + "이고, 점수는 " + max + "다.");
+        System.out.println("1등은 " + first + "이고, 점수는 " + max + "다.");
     }
 }
-
-
-//        if (arr[0]>arr[1]&&arr[0]>arr[2]){
-//            System.out.printf("입력된 값 중 최대값은 "+arr[0]);
-//        }else if (arr[0]>arr[2]&&arr[0]>arr[1]){
-//            System.out.printf("입력된 값 중 최대값은 "+arr[0]);
-//        }else if (arr[1]>arr[2]&&arr[1]>arr[0]){
-//            System.out.println("입력된 값 중 최대값은 " + arr[1]);
-//        }else{
-//            System.out.println("입력된 값 중 최대값은 " +arr[2]);
-//                }
