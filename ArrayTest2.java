@@ -6,10 +6,6 @@ public class ArrayTest2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        /***
-         * 최적화 문제 중 최대값 구하기
-         */
-
         System.out.println("다음 시험에서 1등 학생의 이름과 점수를 구하시오.");
 
         System.out.println("시험에 응시한 학생 수는 몇 명입니까?");
